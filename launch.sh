@@ -31,7 +31,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.
 
 # xinit, sxhkd
 cd ..
-git clone https://github.com/sizlinx/arch-auto-set
 cp arch-auto-set/.xinitrc ~/.xinitrc
 mkdir ~/.config/sxhkd
 cp arch-auto-set/.sxhkdrc ~/.config/sxhkd/sxhkdrc
