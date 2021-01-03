@@ -1,0 +1,8 @@
+super + Return
+    termite
+
+super + space
+    ~/.config/rofi/scripts/appsmenu.sh
+
+super + shift + s
+    flameshot gui
