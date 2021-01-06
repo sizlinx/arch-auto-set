@@ -6,12 +6,6 @@ locale
 # time
 sudo timedatectl set-ntp true
 
-# network
-nmtui
-
-# install git
-sudo pacman -S git
-
 # install yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
