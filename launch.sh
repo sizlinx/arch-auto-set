@@ -37,11 +37,11 @@ sudo systemctl enable slim
 
 # dotfiles
 git clone https://github.com/owl4ce/dotfiles.git && cd dotfiles
-rsync -avzP --exclude '.git*' .* ~/
-cd ~/.icons
-tar -Jxvf Papirus-Custom.tar.xz && tar -Jxvf Papirus-Dark-Custom.tar.xz
-sudo rsync -avzP Papirus-{Custom,Dark-Custom} /usr/share/icons/
-rm -r ~/.icons/Papirus-*
+rsync -avxHAXP --exclude '.git*' .* ~/
+cd ~/.icons && tar -Jxvf Papirus-Custom.tar.xz && tar -Jxvf Papirus-Dark-Custom.tar.xz
+sudo ln -s ~/.icons/Papirus-Custom /usr/share/icons/Papirus-Custom
+sudo ln -s ~/.icons/Papirus-Dark-Custom /usr/share/icons/Papirus-Dark-Custom
+rm -rf ~/.icons/*
 cd ..
 rm -rf dotfiles
 
