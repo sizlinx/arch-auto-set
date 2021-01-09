@@ -2,5 +2,5 @@ ibus-daemon &
 sxhkd &
 flameshot &
 pulseaudio -k
-pulseaudio &
+pulseaudio --start
 exec openbox-session
